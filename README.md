@@ -31,6 +31,10 @@ log_paths:
 description: 
     Web service that turns your ordinary app into badass rockstart tech.
     # Optional but a good idea
+
+name:
+    ninja-service
+    # Optional, default value is folder name
 ```
 
 There are a few more fields, but this will get you started.

@@ -175,7 +175,7 @@ class Service:
     @classmethod
     def load(cls, svc_yml, name):
         spec = _load_spec_file(svc_yml)
-        return Service(name,
+        return Service(spec.get("name") or name,
                        os.path.dirname(svc_yml),
                        spec.get("description"),
                        spec.get("start_cmd"),
